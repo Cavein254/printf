@@ -12,4 +12,5 @@ void print_percentage(void);
 int print_strings(va_list args);
 int print_upper_hex(unsigned int num);
 int print_custom(va_list arg);
+int print_lower_hex(unsigned long int num);
 #endif
