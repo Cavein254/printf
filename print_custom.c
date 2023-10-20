@@ -1,4 +1,9 @@
 #include "main.h";
+/**
+ * print_custom - prints hexadecimal equivalent of non printing characters
+ * @arg: provided characters of arguments
+ * Return: The hex value
+ */
 int print_custom(va_list arg)
 {
 	char *c;
@@ -24,5 +29,11 @@ int print_custom(va_list arg)
 			}
 			size = size + print_upper_hex(temp);
 		}
+		else
+		{
+			_putchar(c[i]);
+			size++;
+		}
 	}
+	return (size);
 }
