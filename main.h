@@ -6,4 +6,5 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_chars(va_list args);
+int _strlen(char *s)
 #endif
