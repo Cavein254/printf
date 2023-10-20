@@ -13,4 +13,6 @@ int print_strings(va_list args);
 int print_upper_hex(unsigned int num);
 int print_custom(va_list arg);
 int print_lower_hex(unsigned long int num);
+int print_pointer(va_list arg);
+int reverse_string(va_list args);
 #endif

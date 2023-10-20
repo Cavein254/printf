@@ -23,5 +23,5 @@ int print_pointer(va_list args)
 	_putchar('0');
 	_putchar('x');
 	final = print_lower_hex(temp);
-	return (final);
+	return (final + 2);
 }
