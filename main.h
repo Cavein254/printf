@@ -31,7 +31,6 @@ int print_pointer(va_list arg);
 int reverse_string(va_list args);
 int string_rot13(va_list args);
 int _printf(const char *identifier, ...);
-#endif
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
