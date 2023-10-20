@@ -10,4 +10,5 @@ int _strlen(char *s);
 int _strlen_const(const char *s);
 void print_percentage(void);
 int print_strings(va_list args);
+int print_upper_hex(unsigned int num);
 #endif
