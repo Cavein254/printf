@@ -5,4 +5,5 @@
 #include <stdarg.h>
 int _printf(const char *format, ...);
 int _putchar(char c);
+int print_chars(va_list args);
 #endif
