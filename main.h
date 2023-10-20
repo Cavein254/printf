@@ -3,12 +3,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <unistd.h>
+#include <limits.h>
+/**
+ * struct placeholder - Holds special _printf values
+ * @type: a character that determines the formatting method
+ * @int: function pointer
+ *
+ * Description: a helper for the printf function
+ */
+typedef struct placeholder
+{
+	char *type;
+	int (*f)();
+} match;
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_chars(va_list args);
 int _strlen(char *s);
 int _strlen_const(const char *s);
-void print_percentage(void);
+int print_percentage(void);
 int print_strings(va_list args);
 int print_upper_hex(unsigned int num);
 int print_custom(va_list arg);
