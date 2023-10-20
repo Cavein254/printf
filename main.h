@@ -9,4 +9,5 @@ int print_chars(va_list args);
 int _strlen(char *s);
 int _strlen_const(const char *s);
 void print_percentage(void);
+int print_strings(va_list args);
 #endif
