@@ -17,8 +17,6 @@ int print_lower_hex(unsigned long int num)
 	}
 	total++;
 	arr = malloc(sizeof(long int) * total);
-	if (arr == NULL)
-		return (NULL);
 	for (i = 0; i < total; i++)
 	{
 		arr[i] = holder % 16;
@@ -27,7 +25,7 @@ int print_lower_hex(unsigned long int num)
 	for (i = total - 1; i >= 0; i++)
 	{
 		if (arr[i] > 9)
-			arr[i] = arr[i] + 7;
+			arr[i] = arr[i] + 39;
 		_putchar(arr[i] + '0');
 	}
 	free(arr);

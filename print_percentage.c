@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 /**
  * print_percentage - prints the percentage sign with ascii value of 37
  * Return: This function returns 1

@@ -21,7 +21,7 @@ int string_rot13(va_list args)
 		{
 			if (str[i] == x[j])
 			{
-				_putchar(b[j]);
+				_putchar(y[j]);
 				total++;
 				k = 1;
 			}

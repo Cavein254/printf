@@ -4,7 +4,7 @@
  * @identifier: determines the function to be run
  * Return: integer variable
  */
-int _printf(const char *identifier, ...)
+ int _printf (const char *identifier, ...)
 {
 	match f[] = {
 		{"%c", print_chars}, {"%s", print_strings}, {"%%", print_percentage}
@@ -33,7 +33,7 @@ More:
 		}
 		_putchar(identifier[i]);
 		i++;
-		len++;
+		size++;
 	}
 	va_end(args);
 	return (size);

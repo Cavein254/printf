@@ -15,7 +15,7 @@ int print_pointer(va_list args)
 	ptr = va_arg(args, void *);
 	if (ptr == NULL)
 	{
-		for (i = 0; p_str != '\0'; i++)
+		for (i = 0; *p_str != '\0'; i++)
 			_putchar(p_str[i]);
 		return (i);
 	}

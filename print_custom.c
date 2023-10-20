@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 /**
  * print_custom - prints hexadecimal equivalent of non printing characters
  * @arg: provided characters of arguments
@@ -16,7 +16,7 @@ int print_custom(va_list arg)
 		c = "(null)";
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		if (c[i] < 32 || s[i] >= 127)
+		if (c[i] < 32 || c[i] >= 127)
 		{
 			_putchar('\\');
 			_putchar('x');
